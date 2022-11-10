@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&family=Noto+Sans+Wancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    text-align: center;
+    background-color: rgb(36, 36, 36);
+    font-family: 'Nanum Gothic', sans-serif;
+    color: rgb(2, 162, 87);
+    padding: 0%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+}
+
+h1{
+    font-family: 'Bebas Neue';
+    font-size: calc(40px + 5vw);
+    animation: brilhotexto 5s infinite;
+}
+
+h2 {
+    font-family: 'Bebas Neue';
+    font-size: calc(10px + 5vw);
+    animation: brilhotexto 5s infinite;
+}
+
+h3 {
+    font-family: 'Bebas Neue';
+    font-size: calc(20px + 3vw);
+    animation: brilhotexto 5s infinite;
+}
+
+h4 {
+    font-family: 'Bebas Neue';
+    font-size: calc(60px);
+}
+
+h5 {
+    color: white;
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+}
+
+button {
+    font-family: 'Bebas Neue', cursive !important;
+    font-size: calc(20px + 2vw) !important;
+}
+#containerlogo {
+    margin-top: 100px;
+    width: clamp(250px, 5vw + 800px, 800px);
+    height: 30vw;
+    min-height: 150px;
+    max-height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    position: relative;
+    animation: float 10s infinite ease-out;
+}
+
+#logo {
+    height: 90%;
+    position: absolute;
+    animation-delay: 7s;
+    z-index: 1;
+    animation: xis 15s infinite;
+}
+
+#x {
+    position: absolute;
+    height: 90%;
+    margin-top: -5%;
+    margin-right: -6%;
+    z-index: 10;
+    opacity: 1;
+}
+#containergrafico {
+    width: 100%;
+    position: absolute;
+    top: calc(80px + 3vw);
+    height: clamp(200px, 30vw + 100px, 500px);
+    min-height: 200px;
+    max-height: 600px;
+    overflow: hidden;
+}
+
+#grafico {
+    position: absolute;
+    width: 900%;
+    height: 80%;
+    animation: grafico 40s infinite linear;
+}
+
+#black {
+    position: absolute;
+    z-index: 5;
+    height: 71%;
+    animation: black 15s infinite;
+    margin-top: -3%;
+    margin-right: -0.1%;
+}
+#velas {
+    width: 100%;
+    max-width: 400px;
+    animation: aparecer 2s 1;
+}
+
+#text1 {
+    animation: aparecerdir 2s 1, brilhotexto 5s infinite;
+}
+#text2 {
+    animation: aparecer 2s 1, brilhotexto 5s infinite;
+}
+
+#sectionheader{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: calc(30px + 8vw);
+}
+
+section {
+    font-size: clamp(7px, 10px + 2vw, 30px);
+    margin-bottom: calc(10px + 5vw);
+}
+
+#section1 {
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#section3 {
+    width: 100%;
+    font-size: clamp(7px, 10px + 2vw, 30px);
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+#compravenda {
+    font-size: clamp(10px, 20px + 1vw, 32px);
+    text-shadow: 1px 1px 6px black;
+    color: white;
+    width: 100%;
+    animation: roll 15s infinite ease, aparecerdir 2s 1;
+    margin-top: -15px;
+    display: flex;
+    flex-direction: column; 
+}
+
+#compravenda > p {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.fotos {
+    column-count: 2;
+    column-gap: 10px;
+}
+
+.fotos > a > img {
+    border-radius: 10px;
+    width: 100%;
+    min-height: 170px;
+    margin-bottom: 10px;
+    transition: all 200ms ease;
+}
+
+.fotos > a > img:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.cardvenda {
+    position: relative;
+    border-radius: 20px;
+    width: 400px;
+    height: 580px;
+    background-color: aliceblue;
+    display: flex;
+    background-color: rgb(2, 162, 87);
+    color: white;
+}
+
+.cardtitulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50px;
+    left: 0;
+    position: absolute;
+    background-color: white;
+    width: 400px;
+    height: 100px;
+}
+
+.cardpreço {
+    width: 100%;
+    position: absolute;
+    top: 160px;
+    left: 0;
+}
+
+.cardlist {
+    width: 90%;
+    position: absolute;
+    top: 300px;
+    left: 5px;
+}
+
+.btncompra {
+    font-size: 40px !important;
+    height: 100px;
+    width: 350px;
+    position: absolute;
+    top: 420px;
+    left: 25px;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+}
+
+.btncompra:hover {
+    background-color: rgb(23, 23, 23);
+
+}
+
+@keyframes brilhotexto {
+    0%{
+        text-shadow: 1px 1px 3px green;
+    }
+    50%{
+        text-shadow: 1px 1px 9px green;
+    }
+    100%{
+        text-shadow: 1px 1px 3px green;
+    }
+    
+}
+
+@keyframes xis {
+    0%{
+        filter: brightness(1.0);
+    }
+    50%{
+        filter: brightness(1.5);
+    }
+    100%{
+        filter: brightness(1.0);
+    }
+}
+
+@keyframes float {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(5%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes grafico {
+    0%{
+        left: 0;
+    }
+    100%{
+        transform: translateX(-2700px);
+    }
+}
+
+@keyframes aparecer {
+    0% {
+        transform: translateX(-500px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes aparecerdir {
+    0% {
+        transform: translateX(500px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes roll {
+    0% {
+        transform: translateY(0%);
+    }
+    5% {
+        transform: translateY(0%);
+    }
+    10% {
+        transform: translateY(-5%);
+    }
+    15% {
+        transform: translateY(-5%);
+    }
+    20% {
+        transform: translateY(-10%);
+    }
+    25% {
+        transform: translateY(-10%);
+    }
+    30% {
+        transform: translateY(-15%);
+    }
+    35% {
+        transform: translateY(-15%);
+    }
+    40% {
+        transform: translateY(-20%);
+    }
+    45% {
+        transform: translateY(-20%);
+    }
+    50% {
+        transform: translateY(-25%);
+    }
+    55% {
+        transform: translateY(-25%);
+    }
+    60% {
+        transform: translateY(-30%);
+    }
+    65% {
+        transform: translateY(-30%);
+    }
+    70% {
+        transform: translateY(-35%);
+    }
+    75% {
+        transform: translateY(-35%);
+    }
+    80% {
+        transform: translateY(-40%);
+    }
+    85% {
+        transform: translateY(-40%);
+    }
+    90% {
+        transform: translateY(-45%);
+    }
+    95% {
+        transform: translateY(-45%);
+    }
+    100% {
+        transform: translateY(-50%);
+    }
+    100% {
+        transform: translateY(-50%);
+    }
+}
